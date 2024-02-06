@@ -30,6 +30,7 @@ The basic loop of the program is:
 1. Iterate over all farcaster ids
 2. Get all the users that FID is following
 3. Write the data to a file (by default `.farcaster_graph.txt` but you can set this via `--output_file_path` CLI arg)
+   - The data is written in a basic adjancency matrix text format where the first value in each line is the FID of the user, the second value is that FID's username and then each subsequent value is a username that FID follows
 
 On subsequent runs, the script will pick up from the last FID you pulled by parsing the output of the file.
 
